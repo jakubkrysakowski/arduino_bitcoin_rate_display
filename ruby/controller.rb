@@ -23,6 +23,5 @@ while true do
     sp.write(data["last"])
   }
 
-
   sleep 2
 end
