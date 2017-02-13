@@ -11,8 +11,6 @@
 #define OLED_RESET 13//OLED -- RST
 Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 
-
-
 void setup()   
 {                
   // Open serial communications and wait for port to open:
@@ -34,9 +32,8 @@ void setup()
 
 void loop () 
 {
-
-
   display.setCursor(0,30);
+  
   if (Serial.available()) {
     display.clearDisplay();
     display.println("BTC/PLN: " + Serial.readString());
