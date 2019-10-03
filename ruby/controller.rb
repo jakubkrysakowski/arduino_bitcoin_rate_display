@@ -6,7 +6,7 @@ require 'open-uri'
 require 'json'
 
 #params for serial port  
-url = 'https://www.bitmarket.pl/json/BTCPLN/ticker.json'
+url = 'https://blockchain.info/tobtc?currency=PLN&value=500'
 port_str = "/dev/ttyUSB2"  #may be different for you  
 baud_rate = 9600  
 data_bits = 8  
